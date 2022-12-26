@@ -1,13 +1,14 @@
 from django.forms import ModelForm
-from .models import Listing
+from .models import Listings
 
 class ListingForm(ModelForm):
     class Meta:
-        model = Listing
+        model = Listings
         fields = [ 
             'name',
             'description',
             'brand',
             'milage',
-            'price'
+            'price',
+            'image'
         ]

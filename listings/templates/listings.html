@@ -1,5 +1,10 @@
 
     <h1>This is a Listings page</h1>
     {% for listing in listings %}
-    <a href="listing/{{ listing.id }}">car {{ listing }}</a>
+    <ul>
+    <li>
+    <a href="listing/{{ listing.id }}">{{ listing }}</a>
+    </li>
+    </ul>
     {% endfor %}
+    <a href="/create">Add new List</a>
